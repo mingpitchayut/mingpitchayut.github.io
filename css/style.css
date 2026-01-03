@@ -145,3 +145,50 @@ h2 { margin-bottom: 30px; border-bottom: 2px solid var(--accent-color); display:
     margin-left: 15px;
     font-family: 'JetBrains Mono', monospace;
 }
+
+/* --- Mobile Responsive Settings --- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+    nav ul {
+        margin-top: 15px;
+        padding: 0;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .email-text {
+        margin-left: 0;
+    }
+
+    .container {
+        margin: 40px auto;
+        padding: 0 15px;
+    }
+    .item span {
+        float: none; /* เอาปี พ.ศ. ลงมาบรรทัดใหม่ */
+        display: block;
+        margin-top: 5px;
+    }
+
+    .cursor-dot, .cursor-outline {
+        display: none;
+    }
+}
